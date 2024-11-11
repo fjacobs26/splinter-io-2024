@@ -36,6 +36,13 @@ public class Incidence {
     @Column
     @Enumerated(EnumType.STRING)
     private Scopes scope;
+    /**Generar un estado
+     * 1.- Abierto
+     * 2.- En curso
+     * 3.- Pendiente
+     * 4.- Resuelta
+     * 5.- Cerrado
+     */
     @Column
     private LocalDateTime createdAt;
     @Column(nullable = true)
